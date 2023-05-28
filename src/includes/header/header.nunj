@@ -1,0 +1,10 @@
+{% from "../../components/menu/menu.nunj" import menu %}
+
+<div class="header">
+	<div class="container header__container">
+		<div class="header__logo">
+			<img src="assets/images/logo.png"/>
+		</div>
+		{{ menu() }}
+	</div>
+</div>

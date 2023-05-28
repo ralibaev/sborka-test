@@ -1,0 +1,28 @@
+{% from "../../components/icon/icon.nunj" import icon %}
+{% macro menu(active=false) %}
+	<nav class="menu">
+		<button class="menu__item">
+			Поиск
+			{{ icon({
+				iconName: 'search',
+				className: 'icon',
+				attr: 'viewBox="0 0 24 24"'
+			}) }}">
+		</button>
+		<button class="menu__item">
+			Корзина
+			{{ icon({
+				iconName: 'cart',
+				className: 'icon'
+			}) }}">
+			<div class="menu__cart-number">
+				<span>2</span>
+			</div>
+		</button>
+		<button class="menu__burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</nav>
+{% endmacro %}
